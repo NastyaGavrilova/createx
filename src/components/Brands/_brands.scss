@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+.c-brands {
+  background-color: $c-white;
+  &__wrapper {
+    padding: 0 20px 120px 20px;
+    margin: 0 auto;
+    max-width: 1230px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    max-width: 120px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .c-brands {
+    &__wrapper {
+      padding: 0 20px 60px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .c-brands {
+    background-color: $c-white;
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 120px 120px 120px;
+      justify-content: space-between;
+    }
+    &__img {
+      max-width: 120px;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+}

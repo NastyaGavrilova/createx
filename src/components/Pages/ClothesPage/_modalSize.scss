@@ -1,0 +1,389 @@
+@import "../../../styles/variables";
+
+.c-modal-size {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 50;
+  &__wrapper {
+    max-width: 870px;
+    margin: 134px auto;
+    background: $c-white;
+    padding: 48px;
+    border-radius: 4px;
+  }
+  &__close {
+    cursor: pointer;
+    position: relative;
+    color: $c-grey-700;
+    float: right;
+    top: -28px;
+  }
+  &__title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: $c-grey;
+  }
+  &__tabs {
+    margin: auto;
+    padding: 32px 0 24px 0;
+    max-width: 266px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__open-tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    // max-width: 97px;
+    // width: 100%;
+    background-color: $c-white;
+    border: 1px solid $c-dark-green;
+    border-radius: 4px;
+  }
+  &__hide-tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: $c-white;
+    border: 1px solid $c-white;
+  }
+  &__hide-tab > &__tab-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: $c-grey-600;
+  }
+  &__open-tab > &__tab-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: $c-dark-green;
+  }
+
+  &__table-women-hide,
+  &__table-men-hide,
+  &__table-kids-hide {
+    display: none;
+  }
+  &__size-table {
+    max-width: 774px;
+    width: 100%;
+    border: 1px solid $c-grey-300;
+    border-radius: 4px;
+  }
+  &__table-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: $c-grey;
+    padding: 16px;
+  }
+  &__divider {
+    margin: 32px 0;
+    max-width: 774px;
+    width: 100%;
+    height: 1px;
+    background: $c-grey-300;
+  }
+  &__measurement {
+    max-width: 416px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 24px;
+  }
+  &__tabs-measurement {
+    max-width: 161px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__tab-measurement {
+    cursor: pointer;
+    padding: 10px 20px;
+    // max-width: 97px;
+    // width: 100%;
+    background-color: $c-white;
+    border: 1px solid $c-dark-green;
+    border-radius: 4px;
+  }
+  &__tab-measurement-hide {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: $c-white;
+    border: 1px solid $c-white;
+  }
+  &__tab-measurement > &__tab-measurement-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: $c-dark-green;
+  }
+  &__tab-measurement-hide > &__tab-measurement-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: $c-grey-600;
+  }
+  &__tabel-inches-hide,
+  &__tabel-centimeters-hide {
+    display: none;
+  }
+  &__measurement-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: $c-grey;
+  }
+  &__tabel-measurement {
+    max-width: 774px;
+    width: 100%;
+    border: 1px solid #e5e8ed;
+    border-radius: 4px;
+  }
+}
+.c-modal-size.open {
+  height: 100%;
+  display: block;
+}
+
+.c-modal-size.close {
+  height: 0;
+  display: none;
+}
+.c-row {
+  max-width: 774px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $c-white;
+
+  padding: 9px 16px;
+  &__item-0 {
+    max-width: 120px;
+    width: 100%;
+  }
+  &__item-1,
+  &__item-2,
+  &__item-3,
+  &__item-4,
+  &__item-5,
+  &__item-6,
+  &__item-7,
+  &__item-8 {
+    max-width: 61px;
+    width: 100%;
+  }
+  &__item-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $c-grey-800;
+  }
+}
+.c-row-0,
+.c-row-2,
+.c-row-4,
+.c-row-6 {
+  background: #f4f5f7;
+}
+@media screen and(max-width:1400px) {
+  .c-modal-size {
+    overflow-y: scroll;
+    &__wrapper {
+      max-width: 770px;
+      margin: 45px auto;
+      padding: 15px;
+    }
+    &__close {
+      top: 0px;
+    }
+    &__title {
+      font-size: 18px;
+    }
+    &__tabs {
+      margin: auto;
+      padding: 32px 0 24px 0;
+      max-width: 266px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__open-tab {
+      padding: 10px 20px;
+      // max-width: 97px;
+      // width: 100%;
+      background-color: $c-white;
+      border: 1px solid $c-dark-green;
+      border-radius: 4px;
+    }
+    &__hide-tab {
+      padding: 10px 20px;
+      background-color: $c-white;
+      border: 1px solid $c-white;
+    }
+    &__hide-tab > &__tab-name {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 160%;
+      color: $c-grey-600;
+    }
+    &__open-tab > &__tab-name {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 160%;
+      color: $c-dark-green;
+    }
+
+    &__table-women-hide,
+    &__table-men-hide,
+    &__table-kids-hide {
+      display: none;
+    }
+    &__size-table {
+      max-width: 774px;
+      width: 100%;
+      border: 1px solid $c-grey-300;
+      border-radius: 4px;
+    }
+    &__table-name {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      color: $c-grey;
+      padding: 2px;
+    }
+    &__divider {
+      margin: 10px 0;
+      max-width: 774px;
+      width: 100%;
+      height: 1px;
+      background: $c-grey-300;
+    }
+    &__measurement {
+      max-width: 416px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+      padding-bottom: 10px;
+    }
+    &__tabs-measurement {
+      max-width: 161px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__tab-measurement {
+      padding: 10px 20px;
+      // max-width: 97px;
+      // width: 100%;
+      background-color: $c-white;
+      border: 1px solid $c-dark-green;
+      border-radius: 4px;
+    }
+    &__tab-measurement-hide {
+      padding: 10px 20px;
+      background-color: $c-white;
+      border: 1px solid $c-white;
+    }
+    &__tab-measurement > &__tab-measurement-name {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 160%;
+      color: $c-dark-green;
+    }
+    &__tab-measurement-hide > &__tab-measurement-name {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 160%;
+      color: $c-grey-600;
+    }
+    &__tabel-inches-hide,
+    &__tabel-centimeters-hide {
+      display: none;
+    }
+    &__measurement-name {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 160%;
+      color: $c-grey;
+    }
+    &__tabel-measurement {
+      max-width: 774px;
+      width: 100%;
+      border: 1px solid #e5e8ed;
+      border-radius: 4px;
+    }
+  }
+  .c-modal-size.open {
+    height: 100%;
+    display: block;
+  }
+
+  .c-modal-size.close {
+    height: 0;
+    display: none;
+  }
+  .c-row {
+    max-width: 774px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $c-white;
+
+    padding: 6px 16px;
+    &__item-0 {
+      max-width: 120px;
+      width: 100%;
+    }
+    &__item-1,
+    &__item-2,
+    &__item-3,
+    &__item-4,
+    &__item-5,
+    &__item-6,
+    &__item-7,
+    &__item-8 {
+      max-width: 61px;
+      width: 100%;
+    }
+    &__item-name {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: $c-grey-800;
+    }
+  }
+}

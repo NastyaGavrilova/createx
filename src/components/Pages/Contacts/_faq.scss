@@ -1,0 +1,77 @@
+@import "../../../styles/variables";
+
+.c-faq {
+  background-color: $c-white;
+  &__wrapper {
+    max-width: 810px;
+    width: 100%;
+  }
+  &__question {
+    transition: all 0.5s ease;
+  }
+  &__question-text {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: $c-grey;
+  }
+  &__answers-hide {
+    display: none;
+  }
+  &__questions-show {
+    height: 2px;
+    width: 18px;
+    background: $c-dark-green;
+    position: relative;
+    top: 14px;
+    left: -8px;
+  }
+  &__questions-hide {
+    background: $c-dark-green;
+    height: 18px;
+    width: 2px;
+    position: relative;
+    top: 6px;
+    left: -15px;
+  }
+  &__questions-hide:after {
+    content: "";
+    height: 2px;
+    width: 18px;
+    background: $c-dark-green;
+    position: absolute;
+    left: -8px;
+    top: 8px;
+  }
+  &__question__wrapper {
+    max-width: 810px;
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+  }
+  &__answers-show {
+    transition: all 0.5s ease;
+    display: block;
+  }
+  &__answer {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: $c-grey-700;
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+  &__divider {
+    max-width: 810px;
+    width: 100%;
+    height: 1px;
+    background-color: $c-grey-300;
+  }
+  &__divider-8 {
+    display: none;
+  }
+  // &__divider:last-child {
+  //   display: none;
+  // }
+}

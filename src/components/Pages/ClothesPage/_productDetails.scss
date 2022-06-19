@@ -1,0 +1,69 @@
+@import "../../../styles/variables";
+
+.c-product-details {
+  max-width: 1230px;
+  width: 100%;
+  padding-bottom: 180px;
+  &__details-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: $c-grey;
+    margin-bottom: 16px;
+  }
+  &__descr {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $c-grey-800;
+    margin-bottom: 20px;
+  }
+  &__list,
+  &__fabric-list {
+    padding-left: 16px;
+  }
+  &__list-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $c-grey-800;
+    margin-bottom: 4px;
+  }
+  &__list-item::marker {
+    color: $c-dark-green;
+  }
+  &__divider {
+    margin: 24px 0;
+    max-width: 1230px;
+    width: 100%;
+    height: 1px;
+    background: $c-grey-300;
+  }
+  &__care-list-item {
+    max-width: 189px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  &__care-list-item,
+  &__list-item :last-child {
+    margin-bottom: 0;
+  }
+  &__care-list-item-name {
+    padding-left: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $c-grey-800;
+  }
+}
+@media screen and(max-width:1300px) {
+  .c-product-details {
+    padding-bottom: 90px;
+  }
+}

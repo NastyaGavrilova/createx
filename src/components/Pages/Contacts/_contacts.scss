@@ -1,0 +1,117 @@
+@import "../../../styles/variables";
+
+.c-contacts {
+  background-color: $c-white;
+  &__wrapper {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 92px 0 180px 0;
+  }
+  &__container {
+    max-width: 1230px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__block-tabs {
+    max-width: 169px;
+    width: 100%;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__tabs {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 150%;
+    color: $c-grey-600;
+    background: none;
+    border: none;
+  }
+  &__active-tabs {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 150%;
+    color: $c-dark-green;
+    background: none;
+    border: none;
+  }
+}
+.c-contacts__content {
+  display: none;
+}
+
+@media screen and(max-width:1300px) {
+  .c-contacts {
+    &__wrapper {
+      padding: 40px 20px 90px 20px;
+    }
+
+    &__block-tabs {
+      max-width: 169px;
+      width: 100%;
+
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &__tabs {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 150%;
+      color: $c-grey-600;
+      background: none;
+      border: none;
+    }
+    &__active-tabs {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 150%;
+      color: $c-dark-green;
+      background: none;
+      border: none;
+    }
+  }
+}
+@media screen and(max-width:760px) {
+  .c-contacts {
+    &__wrapper {
+      padding: 40px 20px 90px 20px;
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+    &__block-tabs {
+      max-width: 100%;
+      height: 70px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &__tabs {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 150%;
+      color: $c-grey-600;
+      background: none;
+      border: none;
+    }
+    &__active-tabs {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 150%;
+      color: $c-dark-green;
+      background: none;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,198 @@
+@import "../../styles/variables";
+
+.c-fashion-blog {
+  background-color: $c-white;
+  &__wrapper {
+    padding: 0 0 120px 0;
+    margin: 0 auto;
+    max-width: 1230px;
+    width: 100%;
+  }
+  &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  &__button {
+    max-width: 130px;
+    width: 100%;
+    border: 1px solid $c-dark-green;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 44px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: $c-dark-green;
+  }
+  &__blogs {
+    max-width: 1230px;
+    width: 100%;
+    display: flex;
+  }
+}
+.c-fashion-blog-item-0 {
+  padding-left: 0px;
+}
+.c-fashion-blog-item-1 {
+  padding-left: 30px;
+}
+.c-fashion-blog-item {
+  &__wrapper {
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16),
+      0px 30px 24px -10px rgba(154, 156, 165, 0.1),
+      0px 12px 10px -6px rgba(154, 156, 165, 0.08),
+      0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  &__information {
+    padding: 24px 24px 21px 24px;
+  }
+  &__title {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: $c-grey;
+  }
+  &__sections {
+    max-width: 308px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: $c-grey-700;
+  }
+  &__comments {
+    max-width: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__paragraphs {
+    margin-top: 16px;
+  }
+  &__paragraph {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: $c-grey-800;
+  }
+  &__devider {
+    margin-top: 4.5px;
+    width: 1px;
+    height: 12px;
+    background-color: $c-grey-700;
+  }
+}
+.e-fashion-blog-item__img {
+  max-width: 600px;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1400px) {
+  .c-fashion-blog {
+    background-color: $c-white;
+    &__wrapper {
+      padding: 0 20px 60px 20px;
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__button {
+      max-width: 130px;
+      width: 100%;
+      border: 1px solid $c-dark-green;
+      box-sizing: border-box;
+      border-radius: 4px;
+      height: 44px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 44px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: $c-dark-green;
+    }
+    &__blogs {
+      max-width: 1230px;
+      width: 100%;
+      display: flex;
+    }
+  }
+  .c-fashion-blog-item-0 {
+    padding-left: 0px;
+  }
+  .c-fashion-blog-item-1 {
+    padding-left: 30px;
+  }
+  .c-fashion-blog-item {
+    &__wrapper {
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16),
+        0px 30px 24px -10px rgba(154, 156, 165, 0.1),
+        0px 12px 10px -6px rgba(154, 156, 165, 0.08),
+        0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    &__information {
+      padding: 12px;
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .c-fashion-blog {
+    background-color: $c-white;
+    &__wrapper {
+      padding: 0 20px 30px 20px;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__button {
+      max-width: 130px;
+      width: 100%;
+      border: 1px solid $c-dark-green;
+      box-sizing: border-box;
+      border-radius: 4px;
+      height: 44px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 44px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: $c-dark-green;
+    }
+    &__blogs {
+      max-width: 1230px;
+      width: 100%;
+      display: flex;
+    }
+  }
+  .c-fashion-blog-item-0 {
+    padding-left: 0px;
+  }
+  .c-fashion-blog-item-1 {
+    padding-left: 30px;
+  }
+  .c-fashion-blog-item {
+    &__paragraphs {
+      display: none;
+    }
+    &__title {
+      font-size: 16px;
+    }
+  }
+}

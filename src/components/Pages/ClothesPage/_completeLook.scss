@@ -1,0 +1,594 @@
+@import "../../../styles/variables";
+
+.c-complete-look {
+  max-width: 1230px;
+  width: 100%;
+  margin-bottom: 117px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__right {
+    max-width: 495px;
+    width: 100%;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: $c-grey;
+    margin-bottom: 60px;
+  }
+  &__img {
+    max-width: 495px;
+    width: 100%;
+    overflow: hidden;
+  }
+  &__swiper {
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  &__navigation {
+    max-width: 84px;
+    width: 100%;
+    position: relative;
+    top: -176px;
+    z-index: 3;
+    float: right;
+    display: flex;
+    right: 15px;
+  }
+  &__nav-prev,
+  &__nav-next {
+    border-radius: 50%;
+    width: 48px !important;
+    height: 48px;
+    transition: all 0.5s ease;
+    padding: 15px;
+  }
+  &__left-arrow,
+  &__right-arrow {
+    fill: $c-grey-800;
+    stroke: $c-grey-800;
+    pointer-events: none;
+    width: 18px;
+    height: 11px;
+    transition: all 0.5s ease;
+  }
+  &__nav-prev:hover svg {
+    border-radius: 50%;
+    fill: $c-white;
+    stroke: $c-white;
+  }
+  &__nav-next:hover svg {
+    border-radius: 50%;
+    fill: $c-white;
+    stroke: $c-white;
+  }
+  &__nav-prev:hover {
+    width: 48px;
+    height: 48px;
+    background: #17696a;
+  }
+  &__nav-next:hover {
+    width: 48px;
+    height: 48px;
+    background: #17696a;
+  }
+}
+.c-complete-look-slide {
+  max-width: 285px;
+  width: 100%;
+  &__wrapper {
+    max-width: 285px;
+    width: 100%;
+    overflow: hidden;
+    padding: 16px;
+  }
+  &__wrapper-0 {
+    background-image: url("../../../assets/jeans_shorts.png");
+  }
+  &__wrapper-1 {
+    background-image: url("../../../assets/tranch.png");
+  }
+  &__wrapper-2 {
+    background-image: url("../../../assets/sandals.png");
+  }
+  &__wrapper-3 {
+    background-image: url("../../../assets/watch.png");
+  }
+  &__sale-rate {
+    max-width: 253px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 242px;
+  }
+  &__sale-rate-0 {
+    margin-bottom: 233px;
+  }
+  &__sale-rate-1 {
+    display: block;
+  }
+  &__rate-0 {
+    display: none;
+  }
+  &__sale-1,
+  &__sale-2,
+  &__sale-3 {
+    display: none;
+  }
+  &__sale {
+    background: $c-red;
+    border-radius: 4px;
+    max-width: 54px;
+    color: $c-white;
+    padding: 1px 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    border: none;
+  }
+  &__rate-1,
+  &__rate-2,
+  &__rate-3 {
+    padding-left: 183px;
+  }
+  &__rate-1 > .c-complete-look__star {
+    fill: $c-yellow;
+    // stroke: $c-yellow;
+  }
+  &__rate-2 > .c-complete-look__star {
+    fill: $c-yellow;
+    // stroke: $c-yellow;
+  }
+  &__rate-3 > .c-complete-look__star-0,
+  .c-complete-look__star-1,
+  .c-complete-look__star-2,
+  .c-complete-look__star-3 {
+    fill: $c-yellow;
+    // stroke: $c-yellow;
+  }
+  &__wish {
+    max-width: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: $c-white;
+    padding: 7.5px 8.4px 7px 8.4px;
+    margin-left: 221px;
+  }
+  &__descr {
+    padding: 16px;
+  }
+  &__name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: $c-grey-800;
+    margin-bottom: 8px;
+  }
+  &__prices-0 {
+    max-width: 126px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__price-0 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: $c-red;
+  }
+  &__price-1,
+  &__price-2,
+  &__price-3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: $c-grey;
+  }
+  &__old-price-0 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration-line: line-through;
+    color: $c-grey-700;
+  }
+  &__old-price-1,
+  &__old-price-2,
+  &__old-price-3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .c-complete-look {
+    margin-bottom: 80px;
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__right {
+      max-width: 400px;
+      width: 100%;
+    }
+    &__title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    &__img {
+      max-width: 400px;
+      width: 100%;
+      overflow: hidden;
+    }
+    &__swiper {
+      max-width: 600px;
+      width: 100%;
+      overflow: hidden;
+      margin: 0;
+    }
+    &__navigation {
+      max-width: 84px;
+      width: 100%;
+      position: relative;
+      top: -70px;
+      z-index: 3;
+      float: right;
+      display: flex;
+      right: 15px;
+    }
+    &__nav-prev,
+    &__nav-next {
+      border-radius: 50%;
+      width: 48px !important;
+      height: 48px;
+      transition: all 0.5s ease;
+      padding: 15px;
+    }
+    &__left-arrow,
+    &__right-arrow {
+      fill: $c-grey-800;
+      stroke: $c-grey-800;
+      pointer-events: none;
+      width: 18px;
+      height: 11px;
+      transition: all 0.5s ease;
+    }
+    &__nav-prev:hover svg {
+      border-radius: 50%;
+      fill: $c-white;
+      stroke: $c-white;
+    }
+    &__nav-next:hover svg {
+      border-radius: 50%;
+      fill: $c-white;
+      stroke: $c-white;
+    }
+    &__nav-prev:hover {
+      width: 48px;
+      height: 48px;
+      background: #17696a;
+    }
+    &__nav-next:hover {
+      width: 48px;
+      height: 48px;
+      background: #17696a;
+    }
+  }
+  .c-complete-look-slide {
+    max-width: 250px;
+    width: 100%;
+    &__wrapper {
+      max-width: 250px;
+      width: 100%;
+      overflow: hidden;
+      padding: 16px;
+      background-position: center;
+    }
+    &__wrapper-0 {
+      background-image: url("../../../assets/jeans_shorts.png");
+    }
+    &__wrapper-1 {
+      background-image: url("../../../assets/tranch.png");
+    }
+    &__wrapper-2 {
+      background-image: url("../../../assets/sandals.png");
+    }
+    &__wrapper-3 {
+      background-image: url("../../../assets/watch.png");
+    }
+    &__sale-rate {
+      max-width: 253px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 242px;
+    }
+    &__sale-rate-0 {
+      margin-bottom: 233px;
+    }
+    &__sale-rate-1 {
+      display: block;
+    }
+    &__rate-0 {
+      display: none;
+    }
+    &__sale-1,
+    &__sale-2,
+    &__sale-3 {
+      display: none;
+    }
+    &__sale {
+      background: $c-red;
+      border-radius: 4px;
+      max-width: 54px;
+      color: $c-white;
+      padding: 1px 8px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 160%;
+      border: none;
+    }
+    &__rate-1,
+    &__rate-2,
+    &__rate-3 {
+      padding-left: 145px;
+    }
+    &__rate-1 > .c-complete-look__star {
+      fill: $c-yellow;
+      // stroke: $c-yellow;
+    }
+    &__rate-2 > .c-complete-look__star {
+      fill: $c-yellow;
+      // stroke: $c-yellow;
+    }
+    &__rate-3 > .c-complete-look__star-0,
+    .c-complete-look__star-1,
+    .c-complete-look__star-2,
+    .c-complete-look__star-3 {
+      fill: $c-yellow;
+      // stroke: $c-yellow;
+    }
+    &__wish {
+      max-width: 32px;
+      width: 32px;
+      border-radius: 50%;
+      border: none;
+      background-color: $c-white;
+      padding: 7.5px 8.4px 7px 8.4px;
+      margin-left: 180px;
+    }
+    &__descr {
+      padding: 8px;
+    }
+    &__name {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    &__prices-0 {
+      max-width: 126px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__price-0 {
+      font-size: 18px;
+    }
+    &__price-1,
+    &__price-2,
+    &__price-3 {
+      font-size: 18px;
+    }
+    &__old-price-0 {
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 1050px) {
+  .c-complete-look {
+    margin-bottom: 0px;
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__right {
+      max-width: 350px;
+      width: 100%;
+    }
+    &__title {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+    &__img {
+      max-width: 350px;
+      width: 100%;
+      overflow: hidden;
+    }
+    &__swiper {
+      max-width: 500px;
+      width: 100%;
+      overflow: hidden;
+      margin: 0;
+    }
+    &__navigation {
+      max-width: 84px;
+      width: 100%;
+      position: relative;
+      top: -70px;
+      z-index: 3;
+      float: right;
+      display: flex;
+      right: 15px;
+    }
+    &__nav-prev,
+    &__nav-next {
+      border-radius: 50%;
+      width: 48px !important;
+      height: 48px;
+      transition: all 0.5s ease;
+      padding: 15px;
+    }
+    &__left-arrow,
+    &__right-arrow {
+      fill: $c-grey-800;
+      stroke: $c-grey-800;
+      pointer-events: none;
+      width: 18px;
+      height: 11px;
+      transition: all 0.5s ease;
+    }
+    &__nav-prev:hover svg {
+      border-radius: 50%;
+      fill: $c-white;
+      stroke: $c-white;
+    }
+    &__nav-next:hover svg {
+      border-radius: 50%;
+      fill: $c-white;
+      stroke: $c-white;
+    }
+    &__nav-prev:hover {
+      width: 48px;
+      height: 48px;
+      background: #17696a;
+    }
+    &__nav-next:hover {
+      width: 48px;
+      height: 48px;
+      background: #17696a;
+    }
+  }
+  .c-complete-look-slide {
+    max-width: 220px;
+    width: 100%;
+    &__wrapper {
+      max-width: 220px;
+      width: 100%;
+      overflow: hidden;
+      padding: 10px;
+      background-position: center;
+    }
+    &__wrapper-0 {
+      background-image: url("../../../assets/jeans_shorts.png");
+    }
+    &__wrapper-1 {
+      background-image: url("../../../assets/tranch.png");
+    }
+    &__wrapper-2 {
+      background-image: url("../../../assets/sandals.png");
+    }
+    &__wrapper-3 {
+      background-image: url("../../../assets/watch.png");
+    }
+    &__sale-rate {
+      max-width: 225px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 200px;
+    }
+    &__sale-rate-0 {
+      margin-bottom: 200px;
+    }
+    &__sale-rate-1 {
+      display: block;
+    }
+    &__rate-0 {
+      display: none;
+    }
+    &__sale-1,
+    &__sale-2,
+    &__sale-3 {
+      display: none;
+    }
+    &__sale {
+      background: $c-red;
+      border-radius: 4px;
+      max-width: 54px;
+      color: $c-white;
+      padding: 1px 7px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 160%;
+      border: none;
+    }
+    &__rate-1,
+    &__rate-2,
+    &__rate-3 {
+      padding-left: 130px;
+    }
+    &__rate-1 > .c-complete-look__star {
+      fill: $c-yellow;
+      // stroke: $c-yellow;
+    }
+    &__rate-2 > .c-complete-look__star {
+      fill: $c-yellow;
+      // stroke: $c-yellow;
+    }
+    &__rate-3 > .c-complete-look__star-0,
+    .c-complete-look__star-1,
+    .c-complete-look__star-2,
+    .c-complete-look__star-3 {
+      fill: $c-yellow;
+      // stroke: $c-yellow;
+    }
+    &__wish {
+      max-width: 32px;
+      width: 32px;
+      border-radius: 50%;
+      border: none;
+      background-color: $c-white;
+      padding: 7.5px 8.4px 7px 8.4px;
+      margin-left: 165px;
+    }
+    &__descr {
+      padding: 8px;
+    }
+    &__name {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    &__prices-0 {
+      max-width: 126px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__price-0 {
+      font-size: 18px;
+    }
+    &__price-1,
+    &__price-2,
+    &__price-3 {
+      font-size: 18px;
+    }
+    &__old-price-0 {
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .c-complete-look {
+    margin-bottom: 0px;
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    &__right {
+      display: none;
+    }
+  }
+}

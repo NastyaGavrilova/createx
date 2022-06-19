@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+.e-titles {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: $c-grey;
+}
+
+@media screen and(max-width:1800px) {
+  .e-titles {
+    font-size: 38px;
+    line-height: 120%;
+    text-align: center;
+    // text-align: center;
+  }
+}
+@media screen and(max-width:1400px) {
+  .e-titles {
+    text-align: center;
+  }
+}

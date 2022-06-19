@@ -1,0 +1,75 @@
+@import "../../styles/variables";
+.c-burger {
+  display: none;
+  &__nav {
+    width: 40px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    background: none;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__btn-inactive {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  &__span-inactive {
+    position: absolute;
+    top: 9px;
+    width: 30px;
+    background-color: black;
+    height: 2px;
+    transition: all 0.2s ease;
+  }
+  &__btn-inactive::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 30px;
+    background-color: black;
+    height: 2px;
+    transition: all 0.2s ease;
+  }
+  &__btn-active::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    width: 25px;
+    background-color: black;
+    height: 2px;
+    transform: rotate(45deg);
+    transform-origin: top left;
+    /* margin-top: 5px; */
+    transition: all 0.2s ease;
+  }
+  &__btn-inactive::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    background-color: black;
+    height: 2px;
+    transition: all 0.2s ease;
+  }
+  &__btn-active::after {
+    content: "";
+    top: 0;
+    margin-left: 18px;
+    position: absolute;
+    width: 25px;
+    background-color: black;
+    height: 2px;
+    transform: rotate(135deg);
+    transform-origin: top left;
+    transition: all 0.2s ease;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .c-burger {
+    display: block;
+  }
+}

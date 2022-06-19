@@ -1,0 +1,128 @@
+@import "../../styles/variables";
+.c-topbar {
+  max-width: 1920px;
+  width: 100%;
+  &__wrapper {
+    background-color: $c-grey;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 12px 345px;
+    display: flex;
+    align-items: center;
+  }
+  &__phone {
+    cursor: pointer;
+    text-decoration: none;
+    color: $c-white;
+    opacity: 0.6;
+    font-family: $f-base;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  &__phone:hover {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+  &__menu {
+    max-width: 360px;
+    width: 100%;
+  }
+  &__menu-list {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__item > a {
+      text-decoration: none;
+      color: $c-white;
+      opacity: 0.6;
+      font-family: $f-base;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    &__item > a:hover {
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  &__account {
+    max-width: 125px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    &--text {
+      cursor: pointer;
+      color: $c-white;
+      opacity: 0.6;
+      font-family: $f-base;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+    &--text:hover {
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+    }
+    &--img {
+      max-width: 13px;
+      width: 100%;
+      fill: $c-white;
+      fill-opacity: 0.6;
+    }
+    &--img:hover {
+      fill-opacity: 1;
+      transition: all 0.5s ease-in-out;
+    }
+    &--divider {
+      color: $c-white;
+      opacity: 0.6;
+    }
+  }
+}
+@media screen and (max-width: 1800px) {
+  .c-topbar {
+    &__wrapper {
+      padding: 12px 245px;
+    }
+  }
+}
+
+@media screen and(max-width:1400px) {
+  .c-topbar {
+    &__wrapper {
+      padding: 8px 145px;
+    }
+    &__phone {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &__menu-list {
+      &__item > a {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+@media screen and(max-width:1350px) {
+  .c-topbar {
+    &__menu {
+      max-width: 260px;
+      width: 100%;
+    }
+  }
+}
+@media screen and(max-width:1000px) {
+  .c-topbar {
+    &__wrapper {
+      padding: 8px 20px;
+    }
+    &__menu {
+      display: none;
+    }
+  }
+}

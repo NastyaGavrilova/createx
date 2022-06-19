@@ -1,0 +1,75 @@
+@import "../../styles/variables";
+
+.c-sale {
+  background-color: $c-white;
+  &__wrapper {
+    padding: 100px 0 150px 0;
+    margin: 0 auto;
+    max-width: 1230px;
+    width: 100%;
+  }
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__button {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.e-sale__button {
+  border: 1px solid $c-dark-green;
+  background: none;
+  border-radius: 4px;
+  padding: 1px 40px;
+  // max-width: 209px;
+  // width: 100%;
+  transition: all 0.5s ease;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 52px;
+  letter-spacing: 0.5px;
+  color: $c-dark-green;
+  transition: all 0.5s ease;
+}
+.e-sale__button:hover {
+  background: $c-dark-green;
+  color: $c-white;
+}
+
+@media screen and (max-width: 1400px) {
+  .c-sale {
+    &__wrapper {
+      padding: 40px 0;
+      // margin: 0 30px;
+      // margin: 0 30px;
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__button {
+      margin-top: 40px;
+    }
+  }
+  .e-sale__button {
+    padding: 1px 30px;
+    transition: all 0.5s ease;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    color: $c-dark-green;
+    transition: all 0.5s ease;
+  }
+}
+@media screen and (max-width: 800px) {
+  .c-sale {
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__button {
+      margin-top: 20px;
+    }
+  }
+}
