@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/createx/static/css/main.f6a13958.css",
-    "main.js": "/createx/static/js/main.74c78222.js",
+    "main.js": "/createx/static/js/main.357a08b7.js",
     "static/media/banner.png": "/createx/static/media/banner.95fbc11e22ba3f5af821.png",
     "static/media/banner2.png": "/createx/static/media/banner2.04832bc2974669418326.png",
     "static/media/banner3.png": "/createx/static/media/banner3.3115e3b248f099bcddf3.png",
@@ -92,10 +92,10 @@
     "static/media/messenger.svg": "/createx/static/media/messenger.4a7fa26792a5a4295b74a4a7328b30b9.svg",
     "index.html": "/createx/index.html",
     "main.f6a13958.css.map": "/createx/static/css/main.f6a13958.css.map",
-    "main.74c78222.js.map": "/createx/static/js/main.74c78222.js.map"
+    "main.357a08b7.js.map": "/createx/static/js/main.357a08b7.js.map"
   },
   "entrypoints": [
     "static/css/main.f6a13958.css",
-    "static/js/main.74c78222.js"
+    "static/js/main.357a08b7.js"
   ]
 }
