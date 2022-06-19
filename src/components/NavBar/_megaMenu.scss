@@ -75,6 +75,7 @@
     flex-direction: column;
     justify-content: space-between;
     &-item__link {
+      cursor: pointer;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -92,6 +93,7 @@
     flex-direction: column;
     justify-content: space-between;
     &-item {
+      cursor: pointer;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -109,6 +111,7 @@
     flex-direction: column;
     justify-content: space-between;
     &-item {
+      cursor: pointer;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;

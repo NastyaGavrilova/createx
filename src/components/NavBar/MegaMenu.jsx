@@ -97,10 +97,22 @@ const MenuShoes = () => {
   return (
     <>
       <ul className="c-megamenu__shoes">
-        <li className="c-megamenu__shoes-item first-item">SHOES</li>
+        <li className="c-megamenu__shoes-item first-item">
+          <Link
+            to="/shoes"
+            className="c-megamenu__clothes-item__link first-item"
+          >
+            SHOES
+          </Link>
+        </li>
         {Array.from({ length: 9 }).map((el, index) => (
           <li className="c-megamenu__shoes-item" key={"shoes-id-" + index}>
-            {shoes[`${index}`]}
+            <Link
+              to={"/shoes" + shoes[`${index}`]}
+              className="c-megamenu__clothes-item__link"
+            >
+              {shoes[`${index}`]}
+            </Link>
           </li>
         ))}
       </ul>
@@ -112,13 +124,27 @@ const MenuAccessories = () => {
   return (
     <>
       <ul className="c-megamenu__accessories">
-        <li className="c-megamenu__accessories-item first-item">ACCESSORIES</li>
+        <li className="c-megamenu__accessories-item first-item">
+          {" "}
+          <Link
+            to="/accessories"
+            className="c-megamenu__clothes-item__link first-item"
+          >
+            ACCESSORIES
+          </Link>
+        </li>
         {Array.from({ length: 10 }).map((el, index) => (
           <li
             className="c-megamenu__accessories-item"
             key={"accessories-is-" + index}
           >
-            {accessories[`${index}`]}
+            <Link
+              to={"/accessories" + accessories[`${index}`]}
+              className="c-megamenu__clothes-item__link"
+            >
+              {" "}
+              {accessories[`${index}`]}
+            </Link>
           </li>
         ))}
       </ul>

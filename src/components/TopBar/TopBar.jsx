@@ -175,7 +175,45 @@ const TopBar = () => {
     "https://www.youtube.com/",
     "https://www.pinterest.ru/",
   ];
-
+  const shoes = [
+    "Boots",
+    "Flat shoes",
+    "Heels",
+    "Sandals",
+    "Mules",
+    "Sliders",
+    "Slippers",
+    "Sneakers",
+    "Leather",
+  ];
+  const accessories = [
+    "Bags & bagpacks",
+    "Hats & scarves",
+    "Hair accessories",
+    "Belts",
+    "Jewellery",
+    "Watches",
+    "Sunglasses",
+    "Purses",
+    "Gloves",
+    "Socks & tights",
+  ];
+  const clothes = [
+    "Coats",
+    "Jackets",
+    "Suits",
+    "Dresses",
+    "Cardigans & sweaters",
+    "Sweatshirts & hoodies",
+    "T-shirts & tops",
+    "Pants",
+    "Jeans",
+    "Shorts",
+    "Skirts",
+    "Lingerie & nightwear",
+    "Sportswear",
+    "Swimwear",
+  ];
   const socials = Array.from({ length: 5 }).map((el, index) => (
     <div
       className={`c-socials c-socials-${index}`}
@@ -349,6 +387,35 @@ const TopBar = () => {
               }
             ></Route>
           ))}
+          {Array.from({ length: 14 }).map((el, index) => (
+            <Route
+              key={"route" + index}
+              path={"/clothes" + clothes[`${index}`]}
+              element={<Clothes clothes={clothesData} />}
+            ></Route>
+          ))}
+          {Array.from({ length: 9 }).map((el, index) => (
+            <Route
+              key={"router" + index}
+              path={"/shoes" + shoes[`${index}`]}
+              element={<Clothes clothes={clothesData} />}
+            ></Route>
+          ))}
+          {Array.from({ length: 10 }).map((el, index) => (
+            <Route
+              key={"routeer" + index}
+              path={"/accessories" + accessories[`${index}`]}
+              element={<Clothes clothes={clothesData} />}
+            ></Route>
+          ))}
+          <Route
+            path="/shoes"
+            element={<Clothes clothes={clothesData} />}
+          ></Route>
+          <Route
+            path="/accessories"
+            element={<Clothes clothes={clothesData} />}
+          ></Route>
           <Route
             path="clothes"
             element={<Clothes clothes={clothesData} />}
