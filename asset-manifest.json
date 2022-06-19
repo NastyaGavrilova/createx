@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/createx/static/css/main.b966cb85.css",
-    "main.js": "/createx/static/js/main.fd775dd1.js",
+    "main.css": "/createx/static/css/main.f6a13958.css",
+    "main.js": "/createx/static/js/main.74c78222.js",
     "static/media/banner.png": "/createx/static/media/banner.95fbc11e22ba3f5af821.png",
     "static/media/banner2.png": "/createx/static/media/banner2.04832bc2974669418326.png",
     "static/media/banner3.png": "/createx/static/media/banner3.3115e3b248f099bcddf3.png",
@@ -19,6 +19,8 @@
     "static/media/men.png": "/createx/static/media/men.237be83638b30f0e2a2c.png",
     "static/media/address3.png": "/createx/static/media/address3.c4b24c8a7f8a7f6cf798.png",
     "static/media/address2.png": "/createx/static/media/address2.07abd5cb5d85383b63f0.png",
+    "static/media/hoodie1.png": "/createx/static/media/hoodie1.92527e52c512a15b40a3.png",
+    "static/media/look.png": "/createx/static/media/look.7093b674cfa48a5f2f07.png",
     "static/media/address4.png": "/createx/static/media/address4.ffca82d472482a79c23c.png",
     "static/media/address1.png": "/createx/static/media/address1.43d9b9cee7f719199ce8.png",
     "static/media/trending1.png": "/createx/static/media/trending1.46374da76f9a14d6b311.png",
@@ -28,9 +30,14 @@
     "static/media/sale1.png": "/createx/static/media/sale1.dcd50c0c8f6784da5f59.png",
     "static/media/blog-item6.jpg": "/createx/static/media/blog-item6.31ea53ffc06972d54a99.jpg",
     "static/media/prod12.png": "/createx/static/media/prod12.8496ebf8d38562f61691.png",
+    "static/media/hoodie3.png": "/createx/static/media/hoodie3.86381421286bc65b9fa2.png",
     "static/media/subscribe.png": "/createx/static/media/subscribe.67ab1b1f8d6cd8d0bbe0.png",
+    "static/media/hoodie2.png": "/createx/static/media/hoodie2.0fb2560a0d8c67cc05bb.png",
+    "static/media/hoodie4.png": "/createx/static/media/hoodie4.5b5d50ace0fde20dad40.png",
+    "static/media/hoodie5.png": "/createx/static/media/hoodie5.e3a83d03674ae7e6cb52.png",
     "static/media/sale2.png": "/createx/static/media/sale2.7972af08d7f21b27e078.png",
     "static/media/prod1.png": "/createx/static/media/prod1.b8e7a5a297ed65e6d988.png",
+    "static/media/jeans_shorts.png": "/createx/static/media/jeans_shorts.6314bce8628891a20e28.png",
     "static/media/mobapp.png": "/createx/static/media/mobapp.82a8e5dae70a04f4384b.png",
     "static/media/prod8.png": "/createx/static/media/prod8.06322a48af9d06e44235.png",
     "static/media/product6.png": "/createx/static/media/product6.06322a48af9d06e44235.png",
@@ -50,14 +57,17 @@
     "static/media/popular2.png": "/createx/static/media/popular2.12967d7112bf702f659c.png",
     "static/media/popular5.png": "/createx/static/media/popular5.bb355b8eb14f42ebdc40.png",
     "static/media/prod7.png": "/createx/static/media/prod7.14468a62fdd620fc5b12.png",
+    "static/media/watch.png": "/createx/static/media/watch.14468a62fdd620fc5b12.png",
     "static/media/popular4.png": "/createx/static/media/popular4.69e7cd5a34abc84dcbf3.png",
     "static/media/popular1.png": "/createx/static/media/popular1.9ea8f441f2999afe0608.png",
     "static/media/prod3.png": "/createx/static/media/prod3.4c89b6fedde188bfbce0.png",
     "static/media/product1.png": "/createx/static/media/product1.4c89b6fedde188bfbce0.png",
+    "static/media/tranch.png": "/createx/static/media/tranch.40302b96d443b45eb924.png",
     "static/media/prod4.png": "/createx/static/media/prod4.a675c0e784c0831d19d8.png",
     "static/media/product3.png": "/createx/static/media/product3.a675c0e784c0831d19d8.png",
     "static/media/product2.png": "/createx/static/media/product2.089bda90471771f811dd.png",
     "static/media/popular3.png": "/createx/static/media/popular3.7079c94a563fa49340c0.png",
+    "static/media/sandals.png": "/createx/static/media/sandals.79f6b7a3002cb3e82937.png",
     "static/media/appStore.svg": "/createx/static/media/appStore.b637d653f2537927fa2982279efe2d35.svg",
     "static/media/logo1.svg": "/createx/static/media/logo1.81e9e24138b3dfc09743a6c4285960d5.svg",
     "static/media/googlePlay.svg": "/createx/static/media/googlePlay.5b9bab1db4c1192e08c14e1c820905ff.svg",
@@ -67,7 +77,6 @@
     "static/media/googlePlayIcon.svg": "/createx/static/media/googlePlayIcon.855da83838b541f642d5ea592e94446b.svg",
     "static/media/google.svg": "/createx/static/media/google.3b08841bba25cdf2d92b3f3020ab66ee.svg",
     "static/media/address-marker.svg": "/createx/static/media/address-marker.e78814d5a20e84e2f6a0cd448025c798.svg",
-    "static/media/User.svg": "/createx/static/media/User.2bc30878801f92bed4f4247c71055820.svg",
     "static/media/tweet.svg": "/createx/static/media/tweet.65a86826b544995412736d84072ae1fc.svg",
     "static/media/star.svg": "/createx/static/media/star.962e86b6f0d721fded02cd5a6542738f.svg",
     "static/media/clock.svg": "/createx/static/media/clock.eaa52a809925381a355e6fab78e9eeb4.svg",
@@ -82,11 +91,11 @@
     "static/media/arrowNext.svg": "/createx/static/media/arrowNext.ae6e3800525917d393e3.svg",
     "static/media/messenger.svg": "/createx/static/media/messenger.4a7fa26792a5a4295b74a4a7328b30b9.svg",
     "index.html": "/createx/index.html",
-    "main.b966cb85.css.map": "/createx/static/css/main.b966cb85.css.map",
-    "main.fd775dd1.js.map": "/createx/static/js/main.fd775dd1.js.map"
+    "main.f6a13958.css.map": "/createx/static/css/main.f6a13958.css.map",
+    "main.74c78222.js.map": "/createx/static/js/main.74c78222.js.map"
   },
   "entrypoints": [
-    "static/css/main.b966cb85.css",
-    "static/js/main.fd775dd1.js"
+    "static/css/main.f6a13958.css",
+    "static/js/main.74c78222.js"
   ]
 }
